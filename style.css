@@ -1,5 +1,14 @@
-
-
+/* NAVBAR SECTION */
+.nav-link {
+  color: black;
+}
+.logIn {
+  color: white;
+  border: 1px solid orange;
+  padding: 10px;
+  background-color: orange;
+}
+/* NAVBAR SECTION END */
 
 /*  Footer mobile responsive section starts here */
 @media (max-width: 400px) 
