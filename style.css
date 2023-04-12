@@ -1,0 +1,13 @@
+
+
+/*  Footer mobile responsive section starts here */
+@media (max-width: 400px) 
+          {.footerNavMobileRes{flex-direction: column !important;
+          }}
+@media (max-width: 797px) and (min-width: 401px)
+          {.footerNavMobileRes{justify-content: center !important;
+          }}
+@media (max-width: 800px) 
+          {.footercContainerMobileRes{flex-direction: column; text-align: center !important;
+          }}
+ /*  Footer mobile responsive section ends here */
