@@ -1,4 +1,3 @@
-
 // Datatable loader script in Inventory Management - Richard
 // loader scripts starts here
 $(document).ready(function () {
