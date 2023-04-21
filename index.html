@@ -12,93 +12,169 @@
   </head>
   <body class="">
         
-    <header>
-       
+    <header>   
         <!----------------Navigation Bar Area-------------------->
             <nav class="navbar navbar-expand-lg sticky-top navBarColor" >
-              <div class="container-fluid">
-                  <img src="./resources/mp2-brand-logo.jpg" alt="logo" height="70px">
-                  
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
+               <div class="container-fluid">
+                      <img src="./resources/mp2-brand-logo.jpg" alt="logo" height="70px">           
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <!---main flex container on navbav set 1 -->
                   <div class="collapse navbar-collapse mx-auto" id="navbarNav">
-                    <ul class="navbar-nav">
-                      <li class="nav-item px-4 navbarResponsivePadding">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                      </li>
-                      <li class="nav-item px-4 navbarResponsivePadding">
-                        <a class="nav-link"  href="#about">About</a>
-                      </li>
-                      <li class="nav-item px-4 navbarResponsivePadding">
-                        <a class="nav-link" href="#pricing">Pricing</a>
-                      </li>
-                      <li class="nav-item px-4 navbarResponsivePadding">
-                        <a class="nav-link"  href="./pages/blog.html">Blog</a>
-                      </li>
-
-                      <li class="nav-item px-4 navbarResponsivePadding">
-                        <a class="nav-link" href="./pages/contact.html">Contact</a>
-                      </li>
-                    </ul>
-                </div>
-              </div>  
-          </nav>
+                      <!---flex Item-1 set-1 --> 
+                        <div class="d-flex flex-row container-fluid"> <!---Set-1 container starting tag-->
+                                 <div class="p-0 w-100"> <!------Set-1 Item 1 starts here-->
+                                     <ul class="navbar-nav">
+                                       <li class="nav-item px-4 navbarResponsivePadding">
+                                         <a class="nav-linkStyle active" aria-current="page" href="#">
+                                           Home
+                                         </a>
+                                       </li>
+                                       <li class="nav-item px-4 navbarResponsivePadding">
+                                         <a class="nav-linkStyle"  href="#about">
+                                           About
+                                         </a>
+                                       </li>
+                                       <li class="nav-item px-4 navbarResponsivePadding">
+                                         <a class="nav-linkStyle" href="#pricing">
+                                           Pricing
+                                         </a>
+                                       </li>
+                                       <li class="nav-item px-4 navbarResponsivePadding">
+                                         <a class="nav-linkStyle"  href="./pages/blog.html">
+                                           Blog
+                                         </a>
+                                       </li>
+                 
+                                       <li class="nav-item px-4 navbarResponsivePadding">
+                                         <a class="nav-linkStyle" href="./pages/contact.html">
+                                           Contact
+                                         </a>
+                                       </li>
+                                     </ul>
+                                </div> <!----Set-1 Item-1 end tag -->
+                                   <!-----Set-1 Item-1 ends here---------> 
+                                   <!-----Set-1 Item-2 starts here---------> 
+                                 <div class="p-0 w-25"><!----Set-1 Item-1 start tag -->
+                                  <a class="btn btn-primary" href="#" role="button">
+                                    Sign-In
+                                  </a>
+                                  <a class="btn btn-primary" href="#" role="button">
+                                    Register
+                                  </a>
+                                <div><!----Set-1 Item-1 end tag -->
+                                   <!-----Set-1 Item-2 ends here--------->
+                      </div><!---Set-1 container end tag-->
+                  </div>
+              </div>         
+           </nav>
           <!--------------------- Navigation End --------------------->
-
-        </div>
-
-        <div class="col-lg-1 text-end">
-
-
-          <!-- Off Canvas -->
-          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-            aria-controls="offcanvasRight">Login <br> Register</button>
-
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-            </div>
-          </div>
-          <!-- Off Canvas End -->
-
-        </div>
-
-
-
-
-
-
-      </div>
-
-
-    </div>
-
-
   </header>
 
-  <section class="product">
-    <h2>Electronic Online POS</h2>
-    <h4>log-In section here</h4>
-    <h4>Registration section here</h4>
-    <section class="features">
-      <h2>Features</h2>
-      <h4>Multi-store management</h4>
-      <h4>Inventory management</h4>
-      <h4>Sales Summary<h4>
+    <section class="product text-center">
+          <div class="bg-primary-subtle d-flex flex-column 
+                      container-fluid mb-3 align-self-center">
+              <div class="p-2">   
+                     <h2>Simple Online e-POS</h2>
+                   <h4>Registration section here</h4>
+              </div>
+              <div class="p-2 justify-content-center">
+                   <img src="./resources/picture.jpg" class="w-50">
+              </div>
+          </div>
+                 <!-- starts of features section here -->
+    <section class="features bg-primary-subtle">
+         <h2 class="text-center">Features</h2>
+             <div class="bg-primary d-flex flex-row container-fluid mb-3 align-self-center">
+                  <div class="container-fluid align-self-center text-center bg-body w-50">
+                     <p class="text-end bg-black w-100">
+                       <h4>Multi-store management</h4>
+                       <h4>Inventory management</h4>
+                       <h4>Sales Summary<h4>
+                     </p>  
+                  </div>
+                  <div class="p-2 container-fluid w-50">
+                         <img src="./resources/picture.jpg" alt="some picture" class="w-100">   
+                  </div>
+            </div>
     </section>
-    <section class="pricing">
-      <h2>Pricing</h2>
+                   <!-- End of features section -->
+                    <!-- starts of pricing section -->
+    <section id="pricing" class=" bg-info-subtle">
+              <div class="d-flex flex-column w-100 container-fluid">
+                    <h2 class="text-center p-5"> 
+                      Pricing
+                    </h2>
+              </div>
+
     </section>
-    <section class="about">
-      <h2>About Us</h2>
+                    <!-- End of pricing section here -->
+                    <!-- starts of Registration section -->
+        <section id="pricing" class=" bg-black">
+              <div class="d-flex flex-column w-100 container-fluid">
+                    <h2 class="text-center p-5"> 
+                      Registration Form
+                    </h2>
+              </div>
+        </section>
+                   <!-- End of Registration section here -->
+                    <!-- About us section starts here -->
+    <section id="about" class="bg-danger">  
+                <h2 class="text-center">
+                  About Us
+                </h2>        
+                              <!--  flex container main -->           
+                <div class="d-flex d-inline-flex flex-lg-row flex-sm-column flex-md-row justify-content-center
+                             p-2"> 
+                             <!--  flex item 1 starts here-->
+                        <div class="w-25 bg-body"> <!--container item set 1 --> 
+                             <div class="d-flex flex-column container-fluid bg-black justify-content-center">
+                                 <div class="p-2 w-100">
+                                     <p>
+                                        <img src="./resources/picture.jpg"class="w-100">
+                                     </p>
+                                 </div>
+                                 <div class="p-2  w-100">
+                                       <p>
+                                        <img src="./resources/picture.jpg"class="w-100">
+                                      </p>
+                                </div>
+                           </div>
+                      </div>
+                         <!--  flex item 1 ends here-->
+                          <!--  flex item 2 stars here-->
+                      <div class="w-25 bg-body-secondary">  <!--container item set 2 -->   
+                        <div class="d-flex flex-column container-fluid bg-success justify-content-center">
+                              <div class="p-2  w-100">
+                                  <p>
+                                     <img src="./resources/picture.jpg"class="w-100">
+                                  </p>
+                              </div>
+                              <div class="p-2  w-100">
+                                    <p>
+                                     <img src="./resources/picture.jpg"class="w-100">
+                                   </p>
+                             </div>
+                        </div>  
+                     </div>
+                </div>   
+                        <!--  flex item 2 ends here-->                
+    </section>   
+                    <!-- About us section ends here -->
+                    <!-- FAQ section starts here -->
+    <section id="faq">
+                 <div class="text-center">
+                     <div class="p-2">
+                      <h2>Frequently Asked Questions</h2>
+                        <ul>
+                           <p>flex 1</p>
+                           <p>flex 2</p>
+                       </ul>
+                     </div>
+                </div>
     </section>
-    <section class="faq">
-      <h2>Frequently Asked Questions</h2>
-    </section>
+                    <!-- FAQ section ends here -->
     <section class="footerAllPage">
       <footer class="footerBgColor container-fluid mb-0 ">
         <div class="d-flex justify-content-around footercContainerMobileRes">
@@ -129,7 +205,7 @@
             </div>
           </div>
           <div class="d-flex flex-column">
-            <div class="p-2">© 2023 KodeVamps</div>
+            <div class="p-2">© 2023 KODESIMPLE</div>
           </div>
           <div class="p-2 align-self-start">
             <a class="btn btn-outline-primary m-4" href="https://www.facebook.com/" target="_blank" role="button">

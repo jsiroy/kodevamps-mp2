@@ -10,18 +10,27 @@
   text-decoration: none;
 }
 
-/* .nav-link::after {
+.nav-link::after {
   text-decoration: none;
   opacity: 0;
   transition: all 0.2s;
-  content: "home";
-  height: 3px;
+  content: "";
+  height: 1px;
   width: 100%;
   background-color: white;
   position: absolute;
   bottom: 0;
   left: 0;
-  } */
+  }
+  .nav-linkStyle {
+    text-decoration: none;
+    font-size:larger;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    color: white;
+    text-decoration: none;
+  }
 
 .nav-link:hover::after {
   opacity: 1;
