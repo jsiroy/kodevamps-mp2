@@ -11,7 +11,6 @@
 }
 
 .nav-link::after {
-  text-decoration: none;
   opacity: 0;
   transition: all 0.2s;
   content: "";
@@ -31,15 +30,13 @@
     color: white;
     text-decoration: none;
   }
-
-.nav-link:hover::after {
-  opacity: 1;
+.nav-link:hover {
+  text-decoration: none !important;
 }
 .nav-link:active{opacity: 0.5;}
 .navBarColor{background-color: #036384; padding-left: 10%;}
 
 /* HEADER SECTION END */
-
 .footerBgColor{background-color: #036384;}
 .footerAllPage {
   align-items: last baseline;
@@ -53,16 +50,25 @@
   margin-left: 0px;
 }
 
+/* 
+ Blog Page Section starts here
+*/
+hr.hrLines {
+  border: 5px solid green;
+  border-radius: 5px;
+}
+
+/* Blog section styling ends here */
+
 /*  Footer mobile responsive section starts here */
 @media (max-width: 400px) {
-  .footerNavMobileRes {
-    flex-direction: column !important;
+  .footerNavMobileRes { flex-wrap: wrap;
+    flex-direction: row !important;
   }
 }
 
 @media (max-width: 797px) and (min-width: 401px) {
-  .footerNavMobileRes {
-    justify-content: center !important;
+  .footerNavMobileRes {flex-wrap: wrap !important;
   }
 }
 
@@ -74,3 +80,44 @@
 }
 
 /*  Footer mobile responsive section ends here */
+/* ------Body Media query starts here---------*/
+ @media (max-width: 400px) {
+  .features-responses {
+      flex-direction: column !important;
+  }
+}
+
+@media (max-width: 500px) and (min-width: 401px) {
+  .features-responses {
+    flex-direction: column !important;
+    
+  }
+}
+
+@media (max-width: 768px) and (min-width: 501px) {
+  .features-responses {
+    flex-direction: row !important;
+  }
+}
+/* ---------About Us Media query----------*/
+@media (max-width: 750px) {
+  .about-responses{ flex-direction: column !important
+      /* flex-direction: column; justify-content: center !important; */
+  }
+}
+
+/* @media (max-width: 500px) and (min-width: 401px) {
+  .about-responsess {
+    flex-direction: row !important;
+    
+  }
+}
+
+@media (max-width: 768px) and (min-width: 501px) {
+  .about-responses {
+    flex-direction:column !important;
+  }
+} */
+
+
+/* ------Body Media query ends here---------*/
