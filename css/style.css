@@ -33,6 +33,7 @@
 .nav-link:hover {
   text-decoration: none !important;
 }
+
 .nav-link:active{opacity: 0.5;}
 .navBarColor{background-color: #036384; padding-left: 10%;}
 
