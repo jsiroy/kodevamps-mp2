@@ -54,17 +54,91 @@
           <!--------------------- Navigation End --------------------->
   </header>
        <Section> 
-               <div class="d-flex flex-row mb-2 justify-content-end">
+               <div class="d-flex flex-row mb-2 justify-content-end container-fluid w-75">
                       <div class="p-2">
-                        <a class="btn btn-primary px-5" href="#" role="button">
-                             Sign-In
-                        </a>
+                        <!-------- Credentials offcanvas starts here---------> 
+                                   <a class="btn btn-outline-dark px-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#user-credentials" aria-controls="user-credentials"  role="button">
+                                     <Span class="fw-bold"> Sign-In </Span>
+                                   </a>
+                              <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="user-credentials" aria-labelledby="user-credentials">
+                                  <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="user-credentials">Sign-In</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                  </div>
+                                  <div class="offcanvas-body">
+                                    <!----------user credentials forms starts here----------->
+                                    <form>
+                                      <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email address or Username</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        
+                                      </div>
+                                      <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                      </div>
+                                      <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                      </div>
+                                      <button type="submit" class="btn btn-outline-dark">
+                                         <a href="./admin/epos.html" target="_blank"> Submit</a>
+                                      </button>
+                                    </form>
+                                    <!----------user credentials forms ends here-------------->
+                                  </div>
+                             </div>
+        
+                          <!-------- Credentials offcanvas ends here---------> 
                       </div>
                       <div class="p-2">
-                       <a class="btn btn-primary px-5" href="#" role="button">
-                        Register
-                      </a>
-                      </div>       
+                          <!-------- registration offcanvas starts here---------> 
+                            <a class="btn btn-outline-dark px-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#users-registration" aria-controls="users-registration" target="_blank" href="./admin/epos.html" role="button">
+                              <Span class="fw-bold"> Register </Span>
+                            </a>
+                           <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="users-registration" aria-labelledby="users-registration">
+                             <div class="offcanvas-header">
+                               <h5 class="offcanvas-title" id="users-registration">Registration Form</h5>
+                               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                             </div>
+                             <div class="offcanvas-body">
+                               <!-------Registration Form starts here---------->
+                               <form>
+                                <div class="mb-3">
+                                  <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Business Type</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Full Name</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Username</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    
+                                  </div>
+                                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                                  <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="mb-3 form-check">
+                                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                              </form>
+                               <!-------Registration Forms ends here------------>
+                             </div>
+                           </div>
+                      </div>
+                      <!-------- registration offcanvas ends here---------> 
                </div>
       </Section>
     <section class="product text-center">
@@ -131,6 +205,23 @@
                                   </div>
                              </div>
                    <!--  flex container set-3 ends here--> 
+                     
+                       <!--  flex container set-4 starts here-->                         
+                       <div class="d-flex d-block flex-row container-fluid bg-danger-subtle justify-content-center
+                       features-responses w-75 flex-nowrap">
+                     <div class="p-2 w-100"> <!--  flex container main -->
+                         <p class="text-start pt-3 container-fluid">
+                          <h4>Compatible devices<h4></h4>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium asperiores nemo reprehenderit voluptates voluptatum fugit, earum quod laudantium possimus debitis quidem cupiditate quaerat. Laboriosam atque qui maiores repudiandae a laudantium?
+                         </p>
+                     </div>
+                     <div class="p-2  w-100">
+                           <p>
+                            <img src="./resources/picture.jpg"class="w-100">
+                          </p>
+                    </div>
+               </div>
+           <!--  flex container set-4 ends here-->
     </section>
                    <!-- End of features section -->
                     <!-- starts of pricing section -->
@@ -143,16 +234,8 @@
 
     </section>
                     <!-- End of pricing section here -->
-                    <!-- starts of Registration section -->
-        <section id="registration" class=" bg-black pt-5">
-              <div class="d-flex flex-column w-100 container-fluid">
-          
-                    <h2 class="text-center p-5 pt-5"> 
-                      Registration Form
-                    </h2>
-              </div>
-        </section>
-                   <!-- End of Registration section here -->
+                  
+
                     <!-- About us section starts here -->
     <section id="about" class="bg-danger pt-5">  
                 <h2 class="text-center">
@@ -203,45 +286,41 @@
                      <div class="p-2">
                       <h2>Frequently Asked Questions</h2>
                         <div class=" faq d-flex d-block w-100 justify-content-center 100"> <!--- flex container main start tag---->
-                                    <div class="p-0 w-50 faq-accordion"> <!------firt item start tag------>
-                                             <div class="accordion" id="accordionExample">
-                                               <div class="accordion-item">
-                                                 <h2 class="accordion-header">
-                                                   <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                     Accordion Item #1
-                                                   </button>
-                                                 </h2>
-                                                 <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                                   <div class="accordion-body">
-                                                     <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                                   </div>
-                                                 </div>
-                                               </div>
-                                               <div class="accordion-item">
-                                                 <h2 class="accordion-header">
-                                                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                     Accordion Item #2
-                                                   </button>
-                                                 </h2>
-                                                 <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                                   <div class="accordion-body">
-                                                     <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                                   </div>
-                                                 </div>
-                                               </div>
-                                               <div class="accordion-item">
-                                                 <h2 class="accordion-header">
-                                                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                     Accordion Item #3
-                                                   </button>
-                                                 </h2>
-                                                 <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                                   <div class="accordion-body">
-                                                     <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                                   </div>
-                                                 </div>
-                                               </div>
-                                             </div>
+                                    <div class="p-0 w-75 faq-accordion"> <!------firt item start tag------>
+                                             <!---------accrodion starts here--------->
+                                             <div class="accordion accordion-flush" id="accordionFlushExample">
+                                              <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                    Accordion Item #1
+                                                  </button>
+                                                </h2>
+                                                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                                                </div>
+                                              </div>
+                                              <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                    Accordion Item #2
+                                                  </button>
+                                                </h2>
+                                                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                                                </div>
+                                              </div>
+                                              <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                                    Accordion Item #3
+                                                  </button>
+                                                </h2>
+                                                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                             <!---------accordion ends here------------>
                                  </div> <!------firt item end tag------>
                         </div><!--- flex container main end tag---->
                      </div>
