@@ -36,7 +36,7 @@
 
 .nav-link:active{opacity: 0.5;}
 .navBarColor{background-color: #036384; padding-left: 10%;}
-
+.submit-link{text-decoration: none; color: black;}
 /* HEADER SECTION END */
 .footerBgColor{background-color: #036384;}
 .footerAllPage {
