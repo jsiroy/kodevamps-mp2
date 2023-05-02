@@ -51,7 +51,6 @@
   margin-left: 0px;
 }
 
-/* 
  Blog Page Section starts here
 */
 hr.hrLines {
@@ -61,14 +60,24 @@ hr.hrLines {
 
 /* Blog section styling ends here */
 
+
+/* Sales management section here*/
+
+/* sales management section ends here */
+
+
+/*  Reposive table start here*/
+.table-container{overflow-x:auto};
+
+/*  Reposive table ends here */
 /*  Footer mobile responsive section starts here */
-@media (max-width: 400px) {
-  .footerNavMobileRes { flex-wrap: wrap;
+@media (max-width: 400px) and (min-width: 300px) {  
+  .footerNavMobileRes {
     flex-direction: row !important;
   }
 }
 
-@media (max-width: 797px) and (min-width: 401px) {
+@media (max-width: 797px) and (min-width: 300px) {
   .footerNavMobileRes {flex-wrap: wrap !important;
   }
 }
@@ -107,18 +116,13 @@ hr.hrLines {
   }
 }
 
-/* @media (max-width: 500px) and (min-width: 401px) {
-  .about-responsess {
-    flex-direction: row !important;
-    
+/* main page body starts here*/
+
+@media (max-width: 500px) and (min-width: 300px) {  
+  .index-brochure{
+    width: 100% !important;
   }
 }
 
-@media (max-width: 768px) and (min-width: 501px) {
-  .about-responses {
-    flex-direction:column !important;
-  }
-} */
+/* main page body ends here*/
 
-
-/* ------Body Media query ends here---------*/
