@@ -16,7 +16,7 @@
             <nav class="navbar navbar-expand-lg sticky-top navBarColor" >
                <div class="container-fluid">
                       <img src="./resources/mp2-brand-logo.jpg" alt="logo" height="70px">           
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <button class="navbar-toggler px-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                       </button>
                   <div class="collapse navbar-collapse mx-auto" id="navbarNav">
@@ -53,11 +53,11 @@
            </nav>
           <!--------------------- Navigation End --------------------->
   </header>
-       <Section> 
+       <Section class="bg-success-subtle "> 
                <div class="d-flex flex-row mb-2 justify-content-end container-fluid w-75">
                       <div class="p-2">
                         <!-------- Credentials offcanvas starts here---------> 
-                                   <a class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#user-credentials" aria-controls="user-credentials"  role="button">
+                                   <a class="btn btn-outline-dark position-static" type="button" data-bs-toggle="offcanvas" data-bs-target="#user-credentials" aria-controls="user-credentials"  role="button">
                                      <Span class="fw-bold"> Sign-In </Span>
                                    </a>
                               <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="user-credentials" aria-labelledby="user-credentials">
@@ -137,23 +137,13 @@
                                <!-------Registration Forms ends here------------>
                              </div>
                            </div>
+                           <!-------- registration offcanvas ends here---------> 
                       </div>
-                      <!-------- registration offcanvas ends here---------> 
+                      
                </div>
-      </Section>
-    <section class="product">
-          <div class="bg-primary-subtle justify-content-center d-flex flex-column 
-                      container-fluid mb-3 align-self-center w-100 text-center">
-              <div class="p-2">   
-                     <h2>Simple Online e-POS</h2>
-                   
-              </div>
-              <div class="p-2 justify-content-center">
-                   <img src="./resources/picture.jpg" class="index-brochure w-75">
-              </div>
-          </div>
-                 <!-- starts of features section here -->
-    <section class="features bg-success-subtle">        
+          <img src="./resources/mp2banner.png" alt="POS brochure"class="index-brochure w-100">
+    </Section>                  
+    <section class="features bg-success-subtle">  <!-- starts of features section here -->      
                 <div class="d-flex flex-row justify-content-center pt-5 flex-nowrap container-fluid">
                        <div class=" w-75">
                         <h2 class="text-center pt-5">Features</h2>
@@ -163,9 +153,9 @@
                 
               <!--  flex container set-1 starts here-->           
                          <div class="d-flex d-block flex-row container-fluid justify-content-center
-                                   features-responses w-75 pt-1">                                     
+                                   features-responses w-75 pt-0">                                     
                              <div class="p-2 w-100 align-self-center">  <!--  flex container main -->                          
-                                 <h4>Simple digital electronic online POS, Easy sales using your mobile and as portable ePOS</h4>
+                                 <h4>Selling is easy using your mobile as portable POS</h4>
                                  <p class="text-start pt-0 container-fluid text-decoration-none">
                                   <div class="">
                                     <ul >    
@@ -291,18 +281,14 @@
                    <!-- End of features section -->
                     <!-- starts of pricing section -->
     <section id="pricing" class=" bg-info-subtle">
-              <div class="d-flex flex-column w-100 container-fluid">
-                    <h2 class="text-center p-5"> 
-                      Pricing
-                    </h2>
-              </div>
+        <img src="./resources/pricing.png" alt="POS brochure"class="index-brochure w-100">
 
     </section>
                     <!-- End of pricing section here -->
                   
 
                     <!-- About us section starts here -->
-    <section id="about" class="bg-danger pt-5">  
+    <section id="about" class="firstLandingPage pt-5 ">  
                 <h2 class="text-center">
                   About Us
                 </h2>        
@@ -424,15 +410,21 @@
                       <!-----footer container set 1 ends here--------->
                       <!-----footer container set 2 starts here-------->
                              
-                  <div class="d-flex d-block w-100 align-self-center justify-content-center">  <!------flex main container start tag------->   
-                                <div class=" d-flex container-fluid p-0 justify-content-around align-self-start w-75"><!--------flex item 2 start tag------------->   
-                                    <div class="d-flex align-self-center"><!--------flex item 1 start tag------------->            
-                                           <Span><p>© 2023 KODESIMPLE</p></Span>    
-                                     </div><!--------flex item 1 end tag-------------> 
-                                 <div class="p-0 d-flex d-block flex-row flex-wrap">   
+                  <div class="d-flex d-block w-100 align-self-center">  <!------flex main container start tag------->   
+                                <div class=" d-flex container-fluid p-0 flex-wrap justify-content-around align-self-center w-75"><!--------flex item 2 start tag------------->   
+                                    <div class="d-flex align-self-center d-inline-block"><!--------flex item 1 start tag------------->            
+                                          <Span><p>Copyright 2023</p></Span>    
+                                    </div><!--------flex item 1 end tag-------------> 
+                                    <div class="d-flex align-self-center d-inline-block">
+                                           <div class="p-0">   <!--------flex item 2 start tag-------------> 
+                                              <img src="./resources/mp2-brand-logo.jpg" alt="facebook logo" style="width: 200px;">
+                                           </div>
+                                       </div>  <!--------flex item 2 end tag------------->    
+                                        <!--------flex item 3 start tag------------->     
+                                   <div class="p-0 d-flex d-block flex-row flex-wrap">   
                                      <div class="p-0 ">
                                          <a class="btn btn-outline-primary m-2" href="https://www.facebook.com/" target="_blank" role="button">
-                                           <img src="./resources/KodeSimple-fav-icon.png" alt="facebook logo" style="width:20px;height:20px;">
+                                           <img src="./resources/icons8-facebook-64.png" alt="facebook logo" style="width:25px; height:25px;">
                                          </a>
                                       </div>
                                       <div class="p-0 ">
@@ -446,7 +438,7 @@
                                           </a>
                                      </div>
                                 </div> 
-                          </div> <!--------flex item 2 end tag------------->
+                          </div> <!--------flex item 3 end tag------------->
                  </div>  <!------flex main container end tag------->   
                <!----------------copyright--------------------->  
       </footer>

@@ -1,137 +1,248 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>KodeSimple</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="shortcut icon" href="./resources/KodeSimple-fav-icon.png" type="image/x-icon" width="100%">
-    <link href="./css/style.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/59d377ced1.js" crossorigin="anonymous"></script>
-  </head>
-  <body class="">
-        
+     <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>KodeSimple</title>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+            <link rel="shortcut icon" href="./resources/KodeSimple-fav-icon.png" type="image/x-icon" width="100%">
+            <link href="./css/style.css" rel="stylesheet">
+           <script src="https://kit.fontawesome.com/56d48ceb17.js" crossorigin="anonymous"></script>
+      </head>
+  <body class="">   
     <header>   
         <!----------------Navigation Bar Area-------------------->
             <nav class="navbar navbar-expand-lg sticky-top navBarColor" >
                <div class="container-fluid">
                       <img src="./resources/mp2-brand-logo.jpg" alt="logo" height="70px">           
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <button class="navbar-toggler px-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                       </button>
-                      <!---main flex container on navbav set 1 -->
                   <div class="collapse navbar-collapse mx-auto" id="navbarNav">
-                      <!---flex Item-1 set-1 --> 
-                        <div class="d-flex flex-row container-fluid"> <!---Set-1 container starting tag-->
-                                 <div class="p-0 w-100"> <!------Set-1 Item 1 starts here-->
-                                     <ul class="navbar-nav">
-                                       <li class="nav-item px-4 navbarResponsivePadding">
-                                         <a class="nav-link active" aria-current="page" href="#">
+                                     <ul class="navbar-nav  ">
+                                       <li class="nav-item  px-4 pt-2 pb-2 navbarResponsivePadding">
+                                         <a class="nav-link  active" aria-current="page" href="#">
                                            Home
                                          </a>
                                        </li>
-                                       <li class="nav-item px-4 navbarResponsivePadding">
-                                         <a class="nav-link"  href="#about">
+                                       <li class="nav-item  px-4 pt-2 pb-2 navbarResponsivePadding">
+                                         <a class="nav-link "  href="#about">
                                            About
                                          </a>
                                        </li>
-                                       <li class="nav-item px-4 navbarResponsivePadding">
-                                         <a class="nav-link" href="#pricing">
+                                       <li class="nav-item  px-4 pt-2 pb-2 navbarResponsivePadding">
+                                         <a class="nav-link " href="#pricing">
                                            Pricing
                                          </a>
                                        </li>
-                                       <li class="nav-item px-4 navbarResponsivePadding">
-                                         <a class="nav-link"  href="./pages/blog.html">
+                                       <li class="nav-item  px-4 pt-2 pb-2 navbarResponsivePadding">
+                                         <a class="nav-link "  href="./pages/blog.html">
                                            Blog
                                          </a>
                                        </li>
                  
-                                       <li class="nav-item px-4 navbarResponsivePadding">
-                                         <a class="nav-link" href="./pages/contact.html">
+                                       <li class="nav-item  px-4 pt-2 pb-2 navbarResponsivePadding">
+                                         <a class="nav-link " href="./pages/contact.html">
                                            Contact
                                          </a>
                                        </li>
                                      </ul>
-                                </div> <!----Set-1 Item-1 end tag -->
-                                   <!-----Set-1 Item-1 ends here---------> 
-                                   <!-----Set-1 Item-2 starts here---------> 
-                                 <div class="p-0 w-25"><!----Set-1 Item-1 start tag -->
-                                  <!-- <a class="btn btn-primary" href="#" role="button">
-                                    Sign-In
-                                  </a>
-                                  <a class="btn btn-primary" href="#" role="button">
-                                    Register
-                                  </a> -->
-                                <div><!----Set-1 Item-1 end tag -->
-                                   <!-----Set-1 Item-2 ends here--------->
-                      </div><!---Set-1 container end tag-->
                   </div>
               </div>         
            </nav>
           <!--------------------- Navigation End --------------------->
   </header>
-
-    <section class="product text-center">
-          <div class="bg-primary-subtle d-flex flex-column 
-                      container-fluid mb-3 align-self-center">
-              <div class="p-2">   
-                     <h2>Simple Online e-POS</h2>
-                   
-              </div>
-              <div class="p-2 justify-content-center">
-                   <img src="./resources/picture.jpg" class="w-50">
+       <Section class="bg-success-subtle "> 
+               <div class="d-flex flex-row mb-2 justify-content-end container-fluid w-75">
+                      <div class="p-2">
+                        <!-------- Credentials offcanvas starts here---------> 
+                                   <a class="btn btn-outline-dark position-static" type="button" data-bs-toggle="offcanvas" data-bs-target="#user-credentials" aria-controls="user-credentials"  role="button">
+                                     <Span class="fw-bold"> Sign-In </Span>
+                                   </a>
+                              <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="user-credentials" aria-labelledby="user-credentials">
+                                  <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="user-credentials">Sign-In</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                  </div>
+                                  <div class="offcanvas-body">
+                                    <!----------user credentials forms starts here----------->
+                                    <form>
+                                      <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email address or Username</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        
+                                      </div>
+                                      <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                      </div>
+                                      <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                      </div>
+                                      <button type="submit" class="btn btn-outline-dark">
+                                         <a href="./admin/epos.html" target="_blank" class="submit-link"> Submit</a>
+                                      </button>
+                                    </form>
+                                    <!----------user credentials forms ends here-------------->
+                                  </div>
+                             </div>
+        
+                          <!-------- Credentials offcanvas ends here---------> 
+                      </div>
+                      <div class="p-2">
+                          <!-------- registration offcanvas starts here---------> 
+                            <a class="btn btn-outline-dark px-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#users-registration" aria-controls="users-registration" target="_blank" href="./admin/epos.html" role="button">
+                              <Span class="fw-bold"> Register </Span>
+                            </a>
+                           <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="users-registration" aria-labelledby="users-registration">
+                             <div class="offcanvas-header">
+                               <h5 class="offcanvas-title" id="users-registration">Registration Form</h5>
+                               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                             </div>
+                             <div class="offcanvas-body">
+                               <!-------Registration Form starts here---------->
+                               <form id="registration-form">
+                                <div class="field-container">
+                                    <label for="firstName">First Name:</label>
+                                    <input name="firstName" type="text" id="firstName" placeholder="Enter your first name">
+                                    <span class="error" id="firstNameError"></span>
+                                </div>
+                                <div class="field-container">
+                                    <label for="lastName">Last Name:</label>
+                                    <input name="lastName" type="text" id="lastName" placeholder="Enter your last name">
+                                    <span class="error" id="lastNameError"></span>
+                                </div>
+                                <div class="field-container">
+                                    <label for="email">Email:</label>
+                                    <input name="email" type="email" id="email" placeholder="Enter your email" required>
+                                    <span class="error" id="emailError"></span>
+                                </div>
+                                <div class="field-container">
+                                    <label for="password">Password:</label>
+                                    <input name="password" type="password" id="password" placeholder="Enter your password">
+                                    <span class="error" id="passwordError"></span>
+                                </div>
+                        
+                                <button type="submit">Register</button>
+                            </form>
+                        
+                               <!-------Registration Forms ends here------------>
+                             </div>
+                           </div>
+                           <!-------- registration offcanvas ends here---------> 
+                      </div>
+                      
+               </div>
+          <div class=" justify-content-center d-flex 
+                      container-fluid align-self-center w-100">
+              <div class="p-0">
+                   <img src="./resources/mp2banner.png" class="index-brochure w-100">
               </div>
           </div>
-                 <!-- starts of features section here -->
-    <section class="features bg-primary-subtle">
-         <h2 class="text-center pt-5">Features</h2>
-
-            
-                     <!-- <p class="text-end bg-black w-100">
-                       <h4>Multi-store management</h4>
-                       <h4>Inventory management</h4>
-                       <h4>Sales Summary<h4>
-                     </p>  
-                     -->
+    </Section>                  
+    <section class="features bg-success-subtle">  <!-- starts of features section here -->      
+                <div class="d-flex flex-row justify-content-center pt-5 flex-nowrap container-fluid">
+                       <div class=" w-75">
+                        <h2 class="text-center pt-5">Features</h2>
+                        <hr class="bs-secondary-color border-2 opacity-50">
+                       </div>
+                </div>     
+                
               <!--  flex container set-1 starts here-->           
-                         <div class="d-flex d-block flex-row container-fluid bg-black justify-content-center
-                                   features-responses w-75 pt-5">
-                             <div class="p-2 w-100">  <!--  flex container main -->
-                                 <p class="text-start pt-3 container-fluid">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium asperiores nemo reprehenderit voluptates voluptatum fugit, earum quod laudantium possimus debitis quidem cupiditate quaerat. Laboriosam atque qui maiores repudiandae a laudantium?
+                         <div class="d-flex d-block flex-row container-fluid justify-content-center
+                                   features-responses w-75 pt-0">                                     
+                             <div class="p-2 w-100 align-self-center">  <!--  flex container main -->                          
+                                 <h4>Selling is easy using your mobile as portable POS</h4>
+                                 <p class="text-start pt-0 container-fluid text-decoration-none">
+                                  <div class="">
+                                    <ul >    
+                                          <li>
+                                            <p>
+                                              Issued elctronic receipt and option to print
+                                           </p> 
+                                         </li>  
+                                          <li>
+                                            <p>
+                                              Issued elctronic receipt and option to print
+                                           </p> 
+                                         </li>   
+                                         <li>
+                                          <p>
+                                            Issued elctronic receipt and option to print
+                                         </p> 
+                                       </li>                          
+                                    </ul>
+                                  </div>
                                  </p>
                              </div>
                              <div class="p-2  w-100">
                                    <p>
-                                    <img src="./resources/picture.jpg"class="w-100">
+                                    <img src="./resources/online-store-employee-scanning-information-product-package.jpg"class="w-100">
+                                    <a href="https://www.freepik.com/free-photo/online-store-employee-scanning-information-product-package_31298535.htm#query=barcode&position=4&from_view=search&track=robertav1_2_sidr">Image by zinkevych</a> on Freepik
                                   </p>
                             </div>
                        </div>
                 
                         <!--  flex container set-1 ends here--> 
                          <!--  flex container set-2 starts here-->          
-                           <div class="d-flex flex-row container-fluid bg-primary justify-content-center
+                           <div class="d-flex flex-row container-fluid justify-content-center
                                  flex d-block flex-row w-75 features-responses"> <!--  flex container main --> 
-                               <div class="p-2 w-100">
+                               <div class="p-2 w-100 align-self-center">
+                                   <h4>Inventory management</h4>
                                    <p class="text-start pt-3 container-fluid">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium asperiores nemo reprehenderit voluptates voluptatum fugit, earum quod laudantium possimus debitis quidem cupiditate quaerat. Laboriosam atque qui maiores repudiandae a laudantium?
-                                   </p>
+                                      <ul>
+                                           <li>
+                                                <p>
+                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                               </p> 
+                                           </li>
+                                           <li>
+                                                <p>
+                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                               </p> 
+                                          </li>
+                                          <li>
+                                                <p>
+                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                               </p> 
+                                         </li>
+                                      </ul>
+                                  </p>
                                </div>
                                <div class="p-2  w-100">
                                      <p>
-                                      <img src="./resources/picture.jpg"class="w-100">
+                                      <img src="./resources/close-up-scanning-box.jpg"class="w-100">
+                                      Image by <a href="https://www.freepik.com/free-photo/close-up-scanning-box_13450095.htm#query=barcode&position=3&from_view=search&track=robertav1_2_sidr">Freepik</a>
                                     </p>
                               </div>
                          </div>
                <!--  flex container set-2 ends here--> 
                        <!--  flex container set-3 starts here-->                         
-                               <div class="d-flex d-block flex-row container-fluid bg-danger-subtle justify-content-center
-                                     features-responses w-75 flex-nowrap">
-                                   <div class="p-2 w-100"> <!--  flex container main -->
+                               <div class="d-flex d-block flex-row container-fluid justify-content-center
+                                     features-responses w-75 flex-nowrap ">
+                                   <div class="p-2 w-100 align-self-center"> <!--  flex container main -->
                                        <p class="text-start pt-3 container-fluid">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium asperiores nemo reprehenderit voluptates voluptatum fugit, earum quod laudantium possimus debitis quidem cupiditate quaerat. Laboriosam atque qui maiores repudiandae a laudantium?
-                                       </p>
+                                        <h4>Sales Summary<h4></h4>
+                                        <ul>
+                                            <li>
+                                               <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                              </p> 
+                                            </li>
+                                            <li>
+                                               <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                              </p> 
+                                            </li>
+                                            <li>
+                                               <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                              </p> 
+                                            </li>
+                                        </ul>
+                                      </p>
                                    </div>
                                    <div class="p-2  w-100">
                                          <p>
@@ -140,6 +251,31 @@
                                   </div>
                              </div>
                    <!--  flex container set-3 ends here--> 
+                     
+                       <!--  flex container set-4 starts here-->                         
+                       <div class="d-flex d-block flex-row container-fluid justify-content-center
+                              features-responses w-75 flex-nowrap">
+                            <div class="p-2 w-100 align-self-center"> <!--  flex container main -->
+                                <p class="text-start pt-3 container-fluid">
+                                    <h4>Mobile Responsive</h4>
+                                    <ul>
+                                      <li>
+                                    <p> barcode scanner, and cash drawer</p>
+                                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Praesentium asperiores nemo reprehenderit voluptates voluptatum fugit, 
+                                        earum quod laudantium possimus debitis quidem cupiditate quaerat.
+                                         Laboriosam atque qui maiores repudiandae a laudantium?
+                                      </li>>
+                                    </ul>
+                              </p>
+                            </div>
+                             <div class="p-2  w-100">
+                              <p>
+                                   <img src="./resources/picture.jpg"class="w-100">
+                               </p>
+                          </div>
+                  </div>
+               <!--  flex container set-4 ends here-->
     </section>
                    <!-- End of features section -->
                     <!-- starts of pricing section -->
@@ -152,18 +288,10 @@
 
     </section>
                     <!-- End of pricing section here -->
-                    <!-- starts of Registration section -->
-        <section id="pricing" class=" bg-black">
-              <div class="d-flex flex-column w-100 container-fluid">
-                   <h4>Registration section here</h4>
-                    <h2 class="text-center p-5"> 
-                      Registration Form
-                    </h2>
-              </div>
-        </section>
-                   <!-- End of Registration section here -->
+                  
+
                     <!-- About us section starts here -->
-    <section id="about" class="bg-danger">  
+    <section id="about" class="firstLandingPage pt-5 ">  
                 <h2 class="text-center">
                   About Us
                 </h2>        
@@ -207,14 +335,48 @@
     </section>   
                     <!-- About us section ends here -->
                     <!-- FAQ section starts here -->
-    <section id="faq">
-                 <div class="text-center">
+    <section id="faq pt-5">
+                 <div class="text-center pt-5">
                      <div class="p-2">
                       <h2>Frequently Asked Questions</h2>
-                        <ul>
-                           <p>flex 1</p>
-                           <p>flex 2</p>
-                       </ul>
+                        <div class=" faq d-flex d-block w-100 justify-content-center 100"> <!--- flex container main start tag---->
+                                    <div class="p-0 w-75 faq-accordion"> <!------firt item start tag------>
+                                             <!---------accrodion starts here--------->
+                                             <div class="accordion accordion-flush" id="accordionFlushExample">
+                                              <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                    Accordion Item #1
+                                                  </button>
+                                                </h2>
+                                                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                                                </div>
+                                              </div>
+                                              <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                    Accordion Item #2
+                                                  </button>
+                                                </h2>
+                                                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                                                </div>
+                                              </div>
+                                              <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                                    Accordion Item #3
+                                                  </button>
+                                                </h2>
+                                                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                             <!---------accordion ends here------------>
+                                 </div> <!------firt item end tag------>
+                        </div><!--- flex container main end tag---->
                      </div>
                 </div>
     </section>
@@ -239,10 +401,10 @@
                                   <a class="nav-link" href="#pricing">Pricing</a>
                                 </div>
                                 <div class="p-2">
-                                  <a class="nav-link" target="_blank" href="./pages/blog.html">Blog</a>
+                                  <a class="nav-link" href="./pages/blog.html">Blog</a>
                                 </div>
                                 <div class="p-2">
-                                  <a class="nav-link" target="_blank" href="./pages/contact.html">Contact</a>
+                                  <a class="nav-link" href="./pages/contact.html">Contact</a>
                                 </div>
                                 <div class="p-2">
                                   <a class="nav-link" href="#faq">Frequently asked questions</a>
@@ -250,37 +412,48 @@
                            </div>
                       <!-----footer container set 1 ends here--------->
                       <!-----footer container set 2 starts here-------->
-                        <hr>
-               <div class="d-flex d-inline-block w-100 justify-content-center          align-self-center d-block">
-                     <div class="p-0">© 2023 KODESIMPLE</div>
-                   </div>
-                            <div class=" d-flex container-fluid p-2 justify-content-center footerNavMobileRes w-100">
-                                <div class="p-0 ">
-                                    <a class="btn btn-outline-primary m-4" href="https://www.facebook.com/" target="_blank" role="button">
-                                      <img src="./resources/facebook.png" alt="facebook logo" style="width:20px;height:20px;">
-                                    </a>
-                                 </div>
-                                 <div class="p-0 ">
-                                     <a class="btn btn-outline-primary m-4" href="mailto:kodevamps@gmail.com" target="_blank" role="button">
-                                       <img src="./resources/gmail.png" alt="gmail logo" style="width:20px;height:20px;">
-                                     </a>
-                                </div>
-                                <div class="p-0 "></div>
-                                     <a class="btn btn-outline-primary m-4" href="https://www.google.com/" target="_blank" role="button">
-                                       <img src="./resources/mobile.png" alt="mobile logo" style="width:20px;height:20px;">
-                                     </a>
-                                </div>
-                         </div>
+                             
+                  <div class="d-flex d-block w-100 align-self-center">  <!------flex main container start tag------->   
+                                <div class=" d-flex container-fluid p-0 flex-wrap justify-content-around align-self-center w-75"><!--------flex item 2 start tag------------->   
+                                    <div class="d-flex align-self-center d-inline-block"><!--------flex item 1 start tag------------->            
+                                          <Span><p>Copyright 2023</p></Span>    
+                                    </div><!--------flex item 1 end tag-------------> 
+                                    <div class="d-flex align-self-center d-inline-block">
+                                           <div class="p-0">   <!--------flex item 2 start tag-------------> 
+                                              <img src="./resources/mp2-brand-logo.jpg" alt="facebook logo" style="width: 200px;">
+                                           </div>
+                                       </div>  <!--------flex item 2 end tag------------->    
+                                        <!--------flex item 3 start tag------------->     
+                                   <div class="p-0 d-flex d-block flex-row flex-wrap">   
+                                     <div class="p-0 ">
+                                         <a class="btn btn-outline-primary m-2" href="https://www.facebook.com/" target="_blank" role="button">
+                                           <img src="./resources/icons8-facebook-64.png" alt="facebook logo" style="width:25px; height:25px;">
+                                         </a>
+                                      </div>
+                                      <div class="p-0 ">
+                                          <a class="btn btn-outline-primary m-2" href="mailto:kodevamps@gmail.com" target="_blank" role="button">
+                                            <img src="./resources/KodeSimple-fav-icon.png" alt="gmail logo" style="width:20px;height:20px;">
+                                          </a>
+                                     </div>
+                                     <div class="p-0 "></div>
+                                          <a class="btn btn-outline-primary m-2" href="https://www.google.com/" target="_blank" role="button">
+                                            <img src="./resources/KodeSimple-fav-icon.png" alt="mobile logo" style="width:20px;height:20px;">
+                                          </a>
+                                     </div>
+                                </div> 
+                          </div> <!--------flex item 3 end tag------------->
+                 </div>  <!------flex main container end tag------->   
                <!----------------copyright--------------------->  
-                    
-                 
-    
       </footer>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
       </script>
 
+     <script src="./js/script.js"></script>
+     <script src="https://kit.fontawesome.com/56d48ceb17.js" crossorigin="anonymous"></script>
+  </body>
+</html>
 
 <!-- 
   //push command guide to a new branch for testing
@@ -296,12 +469,4 @@
   9.) git checkout main  // change branch to main to proceed merging
   10.)git branch  /// checkverify current branch
   11.)git merge origin/"branch name"  // name of new branch to merge to main"
-
-
 -->
-
-</body>
-
-</html>
-
-
