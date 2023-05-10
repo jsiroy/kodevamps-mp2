@@ -27,7 +27,7 @@
                                          </a>
                                        </li>
                                        <li class="nav-item  px-2 pt-2 pb-2 navbarResponsivePadding">
-                                         <a class="nav-link active" aria-current="page" href="./inventory-management.html">
+                                         <a class="nav-link " href="./inventory-management.html">
                                            Inventory
                                          </a>
                                        </li>
@@ -37,7 +37,7 @@
                                          </a>
                                        </li>
                                         <li class="nav-item  px-2 pt-2 pb-2 navbarResponsivePadding">
-                                         <a class="nav-link  " href="./admin.html">
+                                         <a class="nav-link  active" aria-current="page" href="#">
                                            Admin
                                          </a>
                                        </li>
@@ -53,87 +53,24 @@
           <!--------------------- Navigation End --------------------->
   </header>
 
-  <section>
-            
-                 <!--------------inventory input table starts here--------------------->
-                 
-                           <!-- <th>User ID</th>
-                           <th>Entry date</th>
-                           <th>Serial No.</th>
-                           <th>Category</th>
-                           <th>Description</th>
-                           <th>QTY</th>
-                           <th>Buy Price</th>
-                           <th>Sell Price</th>
-                           <th>Profit</th> -->
-                          <!---------input field start---------------> 
-            <form id="inventory-input-form" class="pt-5">
-                <div class="d-flex d-block flex-row  container-fluid justify-content-center w-75 text-xl-start">     
-                            <div class="m-0 input-group-lg">
-                                <label for="serial">Serial No.</label>
-                                <input name="firstName" type="number" id="firstName" placeholder="">
-                                <!-- <span class="error" id="firstNameError"></span> -->
-                            </div>
-                            <div class=" m-0 input-group-lg">
-                                <label for="category">Category</label>
-                                <input name="lastName" type="text" id="lastName" placeholder="">
-                                <!-- <span class="error" id="lastNameError"></span> -->
-                            </div>
-                            <div class="m-0 input-group-lg">
-                                <label for="description">Description</label>
-                                <input name="description" type="text" id="add-inventory-description" placeholder="" required>
-                                <!-- <span class="error" id="emailError"></span> -->
-                            </div>
-                            <div class=" m-0 input-group-lg">
-                                <label for="buyPrice">Buy Price</label>
-                                <input name="buyPrice" type="currency" id="add-inventory-buyPrice" placeholder="0.00">
-                                <!-- <span class="error" id="passwordError"></span> -->
-                            </div>
-                            <div class="m-0 input-group-lg">
-                                <label for="sellPrice">Sell Price</label>
-                                <input name="sellPrice" type="currency" id="add-inventory-sellPrice" placeholder="0.00">
-                                <!-- <span class="error" id="passwordError"></span> -->
-                            </div>
-                            <div class="m-0 input-group-lg">
-                                <label for="quantity">Quantity</label>
-                                <input name="quantity" type="number" id="add-inventory-quantity" placeholder="0">
-                                <!-- <span class="error" id="passwordError"></span> -->
-                            </div>
-                       
-                          <!-----------input field end-------------> 
-                 <!--------------inventory input table ends here----------------------->
-            </div>
-            <div class="d-flex d-block container-fluid justify-content-start w-75">
-                 <div class="mb-2 w-25 align-content-center">
-                     <button type="submit" id="addInventory">Add item</button>
-                </div>
-            </div>
-        </form>
-    <h1 class="text-center my-4">Inventory Management here</h1>
+  <section class="pt-5">     
+                  <!--------------users registration input table ends here----------------------->
+    <h1 class="text-center my-4">User's Registration list</h1>
     <div class="table-container container-fluid d-flex justify-content-center w-100">
-        <div class="p-1 w-75">
+        <div class="p-1 w-75 pt-5">
             <thead>
-               <table id="inventoryTable" class="display table table-striped table-hover" style="width:100%">
-                  <tr>
-                      <th>User ID</th>
-                      <th>Entry date</th>
-                      <th>Serial No.</th>
-                      <th>Category</th>
-                      <th>Description</th>
-                      <th>Quantity</th>
-                      <th>Buy Price</th>
-                      <th>Sell Price</th>
-                      <th>Profit</th>
+               <table id="usersRegistrationList" class="display table table-striped table-hover" style="width:100%">
+                      <th>Busines Name</th>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>User Name</th>
+                      <th>Email Address</th>
+                      <th>Password</th>
                   </tr>
               </thead>
               <tbody>
 
               </tbody>
-              <tfoot>
-                  <tr>
-                     
-                  </tr>
-              </tfoot>
           </table>
       </div>
   </div>
@@ -198,15 +135,8 @@
              <!----------------copyright--------------------->  
     </footer>
   </section>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
-
-
-
-
-
-    </script>
-
-   <script src="./js/script.js"></script>
-</body>
+  <script src="../JS/users-admin.js">
+                 
+  </script>  
+  </body>
 </html>

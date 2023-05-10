@@ -1,212 +1,208 @@
 <!doctype html>
 <html lang="en">
-     <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <title>KodeSimple</title>
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
-            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-            <link rel="shortcut icon" href="../resources/KodeSimple-fav-icon.png" type="image/x-icon" width="100%">
-            <link href="../css/admin-inventory-style.css" rel="stylesheet">
-           <script src="https://kit.fontawesome.com/59d377ced1.js" crossorigin="anonymous"></script>
-      </head>
-  <body class="">   
-    <header>   
-        <!----------------Navigation Bar Area-------------------->
-            <nav class="navbar navbar-expand-lg sticky-top navBarColor" >
-               <div class="container-fluid">
-                      <img src="../resources/mp2-brand-logo.jpg" alt="logo" height="70px">           
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                  <div class="collapse navbar-collapse mx-auto" id="navbarNav">
-                                     <ul class="navbar-nav  ">                                 
-                                       <li class="nav-item  px-2 pt-2 pb-2 navbarResponsivePadding">
-                                         <a class="nav-link "  href="./epos.html">
-                                           ePos
-                                         </a>
-                                       </li>
-                                       <li class="nav-item  px-2 pt-2 pb-2 navbarResponsivePadding">
-                                         <a class="nav-link active" aria-current="page" href="./inventory-management.html">
-                                           Inventory
-                                         </a>
-                                       </li>
-                                       <li class="nav-item  px-2 pt-2 pb-2 navbarResponsivePadding">
-                                         <a class="nav-link "  href="./sales-management.html">
-                                           Sales
-                                         </a>
-                                       </li>
-                                        <li class="nav-item  px-2 pt-2 pb-2 navbarResponsivePadding">
-                                         <a class="nav-link  " href="./admin.html">
-                                           Admin
-                                         </a>
-                                       </li>
-                                       <li class="nav-item  px-2 pt-2 pb-2 navbarResponsivePadding">
-                                         <a class="nav-link " href="./contact-admin.html">
-                                           Contact Us
-                                         </a>
-                                       </li>
-                                     </ul>
-                  </div>
-              </div>         
-           </nav>
-          <!--------------------- Navigation End --------------------->
-  </header>
-
-  <section>
-            
-                 <!--------------inventory input table starts here--------------------->
-                 
-                           <!-- <th>User ID</th>
-                           <th>Entry date</th>
-                           <th>Serial No.</th>
-                           <th>Category</th>
-                           <th>Description</th>
-                           <th>QTY</th>
-                           <th>Buy Price</th>
-                           <th>Sell Price</th>
-                           <th>Profit</th> -->
-                          <!---------input field start---------------> 
-            <form id="inventory-input-form" class="pt-5">
-                <div class="d-flex d-block flex-row  container-fluid justify-content-center w-75 text-xl-start">     
-                            <div class="m-0 input-group-lg">
-                                <label for="serial">Serial No.</label>
-                                <input name="firstName" type="number" id="firstName" placeholder="">
-                                <!-- <span class="error" id="firstNameError"></span> -->
-                            </div>
-                            <div class=" m-0 input-group-lg">
-                                <label for="category">Category</label>
-                                <input name="lastName" type="text" id="lastName" placeholder="">
-                                <!-- <span class="error" id="lastNameError"></span> -->
-                            </div>
-                            <div class="m-0 input-group-lg">
-                                <label for="description">Description</label>
-                                <input name="description" type="text" id="add-inventory-description" placeholder="" required>
-                                <!-- <span class="error" id="emailError"></span> -->
-                            </div>
-                            <div class=" m-0 input-group-lg">
-                                <label for="buyPrice">Buy Price</label>
-                                <input name="buyPrice" type="currency" id="add-inventory-buyPrice" placeholder="0.00">
-                                <!-- <span class="error" id="passwordError"></span> -->
-                            </div>
-                            <div class="m-0 input-group-lg">
-                                <label for="sellPrice">Sell Price</label>
-                                <input name="sellPrice" type="currency" id="add-inventory-sellPrice" placeholder="0.00">
-                                <!-- <span class="error" id="passwordError"></span> -->
-                            </div>
-                            <div class="m-0 input-group-lg">
-                                <label for="quantity">Quantity</label>
-                                <input name="quantity" type="number" id="add-inventory-quantity" placeholder="0">
-                                <!-- <span class="error" id="passwordError"></span> -->
-                            </div>
+             <head>
+                  <meta charset="utf-8">
+                  <meta name="viewport" content="width=device-width, initial-scale=1">
+                  <title>KodeSimple</title>
+                  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+                  integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+                  <link rel="shortcut icon" href="../resources/KodeSimple-fav-icon.png" type="image/x-icon" width="100%">
+                  <link href="../css/admin-inventory-style.css" rel="stylesheet">
+                 <script src="https://kit.fontawesome.com/59d377ced1.js" crossorigin="anonymous"></script>
+            </head>
+    <body>
+          <header>   
+              <!----------------Navigation Bar Area-------------------->
+                  <nav class="navbar navbar-expand-lg sticky-top navBarColor" >
+                     <div class="container-fluid">
+                            <img src="../resources/mp2-brand-logo.jpg" alt="logo" height="70px">           
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                        <div class="collapse navbar-collapse mx-auto" id="navbarNav">
+                                           <ul class="navbar-nav  ">                                 
+                                             <li class="nav-item  px-2 pt-2 pb-2 navbarResponsivePadding">
+                                               <a class="nav-link "  href="./epos.html">
+                                                 ePos
+                                               </a>
+                                             </li>
+                                             <li class="nav-item  px-2 pt-2 pb-2 navbarResponsivePadding">
+                                               <a class="nav-link active" aria-current="page" href="./inventory-management.html">
+                                                 Inventory
+                                               </a>
+                                             </li>
+                                             <li class="nav-item  px-2 pt-2 pb-2 navbarResponsivePadding">
+                                               <a class="nav-link "  href="./sales-management.html">
+                                                 Sales
+                                               </a>
+                                             </li>
+                                              <li class="nav-item  px-2 pt-2 pb-2 navbarResponsivePadding">
+                                               <a class="nav-link  " href="./user-admin.html">
+                                                 Admin
+                                               </a>
+                                             </li>
+                                             <li class="nav-item  px-2 pt-2 pb-2 navbarResponsivePadding">
+                                               <a class="nav-link " href="./contact-admin.html">
+                                                 Contact Us
+                                               </a>
+                                             </li>
+                                           </ul>
+                        </div>
+                    </div>         
+                 </nav>
+                <!--------------------- Navigation End --------------------->
+        </header>
+       
+        <section>
+                  
+                       <!--------------inventory input table starts here--------------------->
                        
-                          <!-----------input field end-------------> 
-                 <!--------------inventory input table ends here----------------------->
-            </div>
-            <div class="d-flex d-block container-fluid justify-content-start w-75">
-                 <div class="mb-2 w-25 align-content-center">
-                     <button type="submit" id="addInventory">Add item</button>
-                </div>
-            </div>
-        </form>
-    <h1 class="text-center my-4">Inventory Management here</h1>
-    <div class="table-container container-fluid d-flex justify-content-center w-100">
-        <div class="p-1 w-75">
-            <thead>
-               <table id="inventoryTable" class="display table table-striped table-hover" style="width:100%">
-                  <tr>
-                      <th>User ID</th>
-                      <th>Entry date</th>
-                      <th>Serial No.</th>
-                      <th>Category</th>
-                      <th>Description</th>
-                      <th>Quantity</th>
-                      <th>Buy Price</th>
-                      <th>Sell Price</th>
-                      <th>Profit</th>
-                  </tr>
-              </thead>
-              <tbody>
-
-              </tbody>
-              <tfoot>
-                  <tr>
-                     
-                  </tr>
-              </tfoot>
-          </table>
-      </div>
-  </div>
-  </section>
-
-  <section class="footerAllPage">
-    <footer class="footerBgColor container-fluid mb-0 ">
-                    <!-----footer container set 1 starts here------>
-                         <div class="d-flex flex-row mb-1 footerNavMobileRes w-100 justify-content-center">
-                              <div class="p-2">
-                                <a class="nav-link" href="../index.html">Home</a>
-                              </div>
-                              <div class="p-2">
-                                <a class="nav-link" href="../index.html #product">Product</a>
-                              </div>
-                              <div class="p-2">
-                                <a class="nav-link" href="../index.html #features">Features</a>
-                              </div>
-                              <div class="p-2">
-                                <a class="nav-link" href="../index.html #about">About</a>
-                              </div>
-                              <div class="p-2">
-                                <a class="nav-link" href="../index.html #pricing">Pricing</a>
-                              </div>
-                              <div class="p-2">
-                                <a class="nav-link active" aria-current="page" href="#">Blog</a>
-                              </div>
-                              <div class="p-2">
-                                <a class="nav-link" href="./contact.html">Contact</a>
-                              </div>
-                              <div class="p-2">
-                                <a class="nav-link" href="../index.html #faq">Frequently asked questions</a>
-                              </div>
-                         </div>
-                    <!-----footer container set 1 ends here--------->
-                    <!-----footer container set 2 starts here-------->
-                           
-                <div class="d-flex d-block w-100 align-self-center justify-content-center">  <!------flex main container start tag------->   
-                              <div class=" d-flex container-fluid p-0 justify-content-around align-self-start w-75"><!--------flex item 2 start tag------------->   
-                                  <div class="d-flex align-self-center"><!--------flex item 1 start tag------------->            
-                                         <Span><p>© 2023 KodeSimple</p></Span>    
-                                   </div><!--------flex item 1 end tag-------------> 
-                               <div class="p-0 d-flex d-block flex-row flex-wrap">   
-                                   <div class="p-0 ">
-                                       <a class="btn btn-outline-primary m-2" href="https://www.facebook.com/" target="_blank" role="button">
-                                         <img src="../resources/KodeSimple-fav-icon.png" alt="facebook logo" style="width:20px;height:20px;">
-                                       </a>
+                                <!---------input field start---------------> 
+                  <!-- <form id="inventory-input-form" class="pt-5"> -->
+                      <div class="d-flex d-block pt-5 container-fluid  justify-content-center w-75 text-xl-start">                    
+                          <form id="inventory-input-form">
+                              <div class="d-flex flex-row flex-wrap footerNavMobileRes ">
+                                    <!-------------------input 1--------------------------->
+                                   <div class="tableToHide">
+                                     <label for="item-userName ">Username</label>
+                                     <input type="text" id="item-userName" name="item-userName">
+                                   </div>
+                                    <!-------------------input 2--------------------------->
+                                    <div class="tableToHide">
+                                     <label for="item-date">Entry date</label>
+                                     <input type="number" id="item-date" name="item-date">
+                                   </div>
+                                     <!-------------------input 3--------------------------->
+                                   <div class="mb-0">
+                                     <label for="item-serial"><span class="fontStyling">Serial No.</span>:</label>
+                                     <input  type="number" id="item-serial" name="item-serial"> <!-- placeholder="(optional)"> -->
+                                   </div>
+                                      <!-------------------input 4--------------------------->
+                                   <div class="mb-0">
+                                     <label for="item-category"><span class="fontStyling">Category</span></label>
+                                     <input type="text" id="item-category" name="item-category " required> <!-- placeholder="(field required)"> -->
                                     </div>
-                                    <div class="p-0 ">
-                                        <a class="btn btn-outline-primary m-2" href="mailto:kodevamps@gmail.com" target="_blank" role="button">
-                                          <img src="../resources/KodeSimple-fav-icon.png" alt="gmail logo" style="width:20px;height:20px;">
-                                        </a>
+                                      <!-------------------input 5--------------------------->
+                                    <div class="mb-0">
+                                       <label for="item-description"><span class="fontStyling">Description</span></label>
+                                       <input type="text" id="item-description" name="item-description" required> <!--placeholder="(field required)"> -->
+                                    </div>
+                                      <!-------------------input 6--------------------------->
+                                    <div class="mb-0">
+                                       <label for="item-quantity"><span class="fontStyling">Quantity</span></label>
+                                        <input type="number" id="item-quantity" name="item-quantity" required> <!--placeholder="(field required)"> -->
+                                    </div>  
+                                      <!-------------------input 7--------------------------->
+                                   <div class="mb-0">
+                                     <label for="item-buyPrice"><span class="fontStyling">Buy Price</span></label>
+                                     <input type="number" id="item-buyPrice" name="item-buyPrice" required> <!-- placeholder="(field required)"> -->
+                                    </div>
+                                     <!-------------------input 8--------------------------->
+                                   <div class="mb-0">
+                                     <label for="item-sellPrice"><span class="fontStyling">Sell Price</span></label>
+                                     <input type="number" id="item-sellPrice" name="item-sellPrice" required> <!--placeholder="(field required)"> -->
                                    </div>
-                                   <div class="p-0 "></div>
-                                        <a class="btn btn-outline-primary m-2" href="https://www.google.com/" target="_blank" role="button">
-                                          <img src="../resources/KodeSimple-fav-icon.png" alt="mobile logo" style="width:20px;height:20px;">
-                                        </a>
+                                      <!-------------------input 9-------------------------->
+                                    <div class="tableToHide">
+                                         <label for="item-profit">Profit</label>
+                                         <input type="number" id="item-profit" name="item-profit" >
                                    </div>
-                              </div> 
-                        </div> <!--------flex item 2 end tag------------->
-               </div>  <!------flex main container end tag------->   
-             <!----------------copyright--------------------->  
-    </footer>
-  </section>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
-
-
-
-
-
-    </script>
-
-   <script src="./js/script.js"></script>
-</body>
-</html>
+                                     <!--------------------End of input---------------------->
+                               </div>
+                           
+                            </form>
+                             <!---------------------End of form----------------------->
+                      </div>     <!-----------input field end-------------> 
+                      <div class="d-flex d-block flex-wrap footerNavMobileRes container-fluid justify-content-start w-75">
+                                  <div class="mb-2 w-25 align-content-center">
+                                      <button type="submit" id="addInventory">Add item</button>
+                                 </div>      
+                                 <!-- <div class="mb-2 w-25 align-content-center">
+                                     <button type="submit" id="displayHistory">History</button>
+                                </div>      -->
+                      </div>
+                        <!--------------inventory input table ends here----------------------->
+          <h1 class="text-center my-4">Inventory Management here</h1>
+          <div class="table-container container-fluid d-flex justify-content-center w-100">
+              <div class="p-1 w-75">
+                  <thead>
+                     <table id="inventoryTable" class="display table table-striped table-hover" style="width:100%">
+                        <tr>
+                            <th>User ID</th>
+                            <th>Entry date</th>
+                            <th>Serial No.</th>
+                            <th>Category</th>
+                            <th>Description</th>
+                            <th>Quantity</th>
+                            <th>Buy Price</th>
+                            <th>Sell Price</th>
+                            <th>Profit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+      
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        </section>
+        <section class="footerAllPage">
+          <footer class="footerBgColor container-fluid mb-0 ">
+                          <!-----footer container set 1 starts here------>
+                               <div class="d-flex flex-row mb-1 footerNavMobileRes w-100 justify-content-center">
+                                    <div class="p-2">
+                                      <a class="nav-link" href="../index.html">Home</a>
+                                    </div>
+                                    <div class="p-2">
+                                      <a class="nav-link" href="../index.html #product">Product</a>
+                                    </div>
+                                    <div class="p-2">
+                                      <a class="nav-link" href="../index.html #features">Features</a>
+                                    </div>
+                                    <div class="p-2">
+                                      <a class="nav-link" href="../index.html #about">About</a>
+                                    </div>
+                                    <div class="p-2">
+                                      <a class="nav-link" href="../index.html #pricing">Pricing</a>
+                                    </div>
+                                    <div class="p-2">
+                                      <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                                    </div>
+                                    <div class="p-2">
+                                      <a class="nav-link" href="./contact.html">Contact</a>
+                                    </div>
+                                    <div class="p-2">
+                                      <a class="nav-link" href="../index.html #faq">Frequently asked questions</a>
+                                    </div>
+                               </div>
+                          <!-----footer container set 1 ends here--------->
+                          <!-----footer container set 2 starts here-------->                
+                      <div class="d-flex d-block w-100 align-self-center justify-content-center">  <!------flex main container start tag------->   
+                                    <div class=" d-flex container-fluid p-0 justify-content-around align-self-start w-75"><!--------flex item 2 start tag------------->   
+                                        <div class="d-flex align-self-center"><!--------flex item 1 start tag------------->            
+                                               <Span><p>© 2023 KodeSimple</p></Span>    
+                                         </div><!--------flex item 1 end tag-------------> 
+                                     <div class="p-0 d-flex d-block flex-row flex-wrap">   
+                                         <div class="p-0 ">
+                                             <a class="btn btn-outline-primary m-2" href="https://www.facebook.com/" target="_blank" role="button">
+                                               <img src="../resources/KodeSimple-fav-icon.png" alt="facebook logo" style="width:20px;height:20px;">
+                                             </a>
+                                          </div>
+                                          <div class="p-0 ">
+                                              <a class="btn btn-outline-primary m-2" href="mailto:kodevamps@gmail.com" target="_blank" role="button">
+                                                <img src="../resources/KodeSimple-fav-icon.png" alt="gmail logo" style="width:20px;height:20px;">
+                                              </a>
+                                         </div>
+                                         <div class="p-0 "></div>
+                                              <a class="btn btn-outline-primary m-2" href="https://www.google.com/" target="_blank" role="button">
+                                                <img src="../resources/KodeSimple-fav-icon.png" alt="mobile logo" style="width:20px;height:20px;">
+                                              </a>
+                                         </div>
+                                    </div> 
+                              </div> <!--------flex item 2 end tag------------->
+                     </div>  <!------flex main container end tag------->   
+                   <!----------------copyright--------------------->  
+             </footer> 
+        <script src="../JS/admin-add-inventory.js"> </script>
+      </body>  
+   </html>

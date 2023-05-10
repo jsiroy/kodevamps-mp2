@@ -27,7 +27,7 @@
                                          </a>
                                        </li>
                                        <li class="nav-item  px-2 pt-2 pb-2 navbarResponsivePadding">
-                                         <a class="nav-link active" aria-current="page" href="./inventory-management.html">
+                                         <a class="nav-link " href="./inventory-management.html">
                                            Inventory
                                          </a>
                                        </li>
@@ -37,7 +37,7 @@
                                          </a>
                                        </li>
                                         <li class="nav-item  px-2 pt-2 pb-2 navbarResponsivePadding">
-                                         <a class="nav-link  " href="./admin.html">
+                                         <a class="nav-link  active" aria-current="page" href="#">
                                            Admin
                                          </a>
                                        </li>
@@ -53,263 +53,57 @@
           <!--------------------- Navigation End --------------------->
   </header>
 
-  <section>
-            
-                 <!--------------inventory input table starts here--------------------->
-                 
-                          <!---------input field start---------------> 
-            <!-- <form id="inventory-input-form" class="pt-5"> -->
-                <div class="d-flex d-block pt-5 container-fluid  justify-content-center w-75 text-xl-start">                    
-                    <form id="inventory-input-form">
-                        <div class="d-flex flex-row flex-wrap footerNavMobileRes ">
-                              <!-------------------input 1--------------------------->
-                             <div class="tableToHide">
-                               <label for="item-userName ">Username</label>
-                               <input type="text" id="item-userName" name="item-userName">
-                             </div>
-                              <!-------------------input 2--------------------------->
-                              <div class="tableToHide">
-                               <label for="item-date">Entry date</label>
-                               <input type="number" id="item-date" name="item-date">
-                             </div>
-                               <!-------------------input 3--------------------------->
-                             <div class="mb-0">
-                               <label for="item-serial"><span class="fontStyling">Serial No.</span>:</label>
-                               <input  type="number" id="item-serial" name="item-serial" placeholder="(optional)">
-                             </div>
-                                <!-------------------input 4--------------------------->
-                             <div class="mb-0">
-                               <label for="item-category"><span class="fontStyling">Category</span></label>
-                               <input type="text" id="item-category" name="item-category " placeholder="(field required)">
-                              </div>
-                                <!-------------------input 5--------------------------->
-                              <div class="mb-0">
-                                 <label for="item-description"><span class="fontStyling">Description</span></label>
-                                 <input type="text" id="item-description" name="item-description"placeholder="(field required)">
-                              </div>
-                                <!-------------------input 6--------------------------->
-                              <div class="mb-0">
-                                 <label for="item-quantity"><span class="fontStyling">Quantity</span></label>
-                                  <input type="number" id="item-quantity" name="item-quantity"placeholder="(field required)">
-                              </div>  
-                                <!-------------------input 7--------------------------->
-                             <div class="mb-0">
-                               <label for="item-buyPrice"><span class="fontStyling">Buy Price</span></label>
-                               <input type="number" id="item-buyPrice" name="item-buyPrice" placeholder="(field required)">
-                              </div>
-                               <!-------------------input 8--------------------------->
-                             <div class="mb-0">
-                               <label for="item-sellPrice"><span class="fontStyling">Sell Price</span></label>
-                               <input type="number" id="item-sellPrice" name="item-sellPrice" placeholder="(field required)">
-                             </div>
-                                <!-------------------input 9-------------------------->
-                              <div class="tableToHide">
-                                   <label for="item-profit">Profit</label>
-                                   <input type="number" id="item-profit" name="item-profit">
-                             </div>
-                               <!--------------------End of input---------------------->
-                         </div>
-                     
-                      </form>
-                       <!---------------------End of form----------------------->
-                </div>     <!-----------input field end-------------> 
-                <div class="d-flex d-block flex-wrap footerNavMobileRes container-fluid justify-content-start w-75">
-                            <div class="mb-2 w-25 align-content-center">
-                                <button type="submit" id="addInventory">Add item</button>
-                           </div>          
-                </div>
-                  <!--------------inventory input table ends here----------------------->
-    <h1 class="text-center my-4">Inventory Management here</h1>
+  <section class="pt-5">     
+                  <!--------------users registration input table ends here----------------------->
+    <h1 class="text-center my-4">User's Registration list</h1>
     <div class="table-container container-fluid d-flex justify-content-center w-100">
-        <div class="p-1 w-75">
-            <thead>
-               <table id="inventoryTable" class="display table table-striped table-hover" style="width:100%">
-                  <tr>
-                      <th>User ID</th>
-                      <th>Entry date</th>
-                      <th>Serial No.</th>
-                      <th>Category</th>
-                      <th>Description</th>
-                      <th>Quantity</th>
-                      <th>Buy Price</th>
-                      <th>Sell Price</th>
-                      <th>Profit</th>
-                  </tr>
-              </thead>
-              <tbody>
-
-              </tbody>
-          </table>
+      <div class="p-1 w-75 pt-5">
+        <table id="usersRegistrationList" class="display table table-striped table-hover" style="width:100%">
+          <thead>
+            <tr>
+              <th>Business Name</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>User Name</th>
+              <th>Email Ad</th>
+              <th>Password</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
       </div>
-  </div>
-  </section>
-
-  <section class="footerAllPage">
-    <footer class="footerBgColor container-fluid mb-0 ">
-                    <!-----footer container set 1 starts here------>
-                         <div class="d-flex flex-row mb-1 footerNavMobileRes w-100 justify-content-center">
-                              <div class="p-2">
-                                <a class="nav-link" href="../index.html">Home</a>
-                              </div>
-                              <div class="p-2">
-                                <a class="nav-link" href="../index.html #product">Product</a>
-                              </div>
-                              <div class="p-2">
-                                <a class="nav-link" href="../index.html #features">Features</a>
-                              </div>
-                              <div class="p-2">
-                                <a class="nav-link" href="../index.html #about">About</a>
-                              </div>
-                              <div class="p-2">
-                                <a class="nav-link" href="../index.html #pricing">Pricing</a>
-                              </div>
-                              <div class="p-2">
-                                <a class="nav-link active" aria-current="page" href="#">Blog</a>
-                              </div>
-                              <div class="p-2">
-                                <a class="nav-link" href="./contact.html">Contact</a>
-                              </div>
-                              <div class="p-2">
-                                <a class="nav-link" href="../index.html #faq">Frequently asked questions</a>
-                              </div>
-                         </div>
-                    <!-----footer container set 1 ends here--------->
-                    <!-----footer container set 2 starts here-------->
-                           
-                <div class="d-flex d-block w-100 align-self-center justify-content-center">  <!------flex main container start tag------->   
-                              <div class=" d-flex container-fluid p-0 justify-content-around align-self-start w-75"><!--------flex item 2 start tag------------->   
-                                  <div class="d-flex align-self-center"><!--------flex item 1 start tag------------->            
-                                         <Span><p>© 2023 KodeSimple</p></Span>    
-                                   </div><!--------flex item 1 end tag-------------> 
-                               <div class="p-0 d-flex d-block flex-row flex-wrap">   
-                                   <div class="p-0 ">
-                                       <a class="btn btn-outline-primary m-2" href="https://www.facebook.com/" target="_blank" role="button">
-                                         <img src="../resources/KodeSimple-fav-icon.png" alt="facebook logo" style="width:20px;height:20px;">
-                                       </a>
-                                    </div>
-                                    <div class="p-0 ">
-                                        <a class="btn btn-outline-primary m-2" href="mailto:kodevamps@gmail.com" target="_blank" role="button">
-                                          <img src="../resources/KodeSimple-fav-icon.png" alt="gmail logo" style="width:20px;height:20px;">
-                                        </a>
-                                   </div>
-                                   <div class="p-0 "></div>
-                                        <a class="btn btn-outline-primary m-2" href="https://www.google.com/" target="_blank" role="button">
-                                          <img src="../resources/KodeSimple-fav-icon.png" alt="mobile logo" style="width:20px;height:20px;">
-                                        </a>
-                                   </div>
-                              </div> 
-                        </div> <!--------flex item 2 end tag------------->
-               </div>  <!------flex main container end tag------->   
-             <!----------------copyright--------------------->  
-    </footer>
-  </section>
-  <script>
- /////////////////////////////////////////////////////////////////
- const inventoryForm = document.getElementById('inventory-input-form');
-const addInventoryButton = document.getElementById('addInventory');
-const inventoryTableBody = document.getElementById('inventoryTable').getElementsByTagName('tbody')[0];
-const inventoryData = [];
-
-function getCurrentDateTime() {
-  const now = new Date();
-  const options = { 
-    month: 'short', 
-    day: '2-digit',
-    year: 'numeric',
-    hour: 'numeric',
-    minute: 'numeric',
-    hour12: true
-  };
-  return now.toLocaleString('en-US', options);
-}
-
-function addInventory() {
-  const itemUserNameInput = document.getElementById('item-userName');
-  const itemDateInput = document.getElementById('item-date');
-  const itemSerialInput = document.getElementById('item-serial');
-  const itemCategoryInput = document.getElementById('item-category');
-  const itemDescriptionInput = document.getElementById('item-description');
-  const itemQuantityInput = document.getElementById('item-quantity');
-  const itemBuyPriceInput = document.getElementById('item-buyPrice');
-  const itemSellPriceInput = document.getElementById('item-sellPrice');
-
-   /////////////////////condition////////////////////////////////////////
-          if (
-    !itemCategoryInput.value ||
-    !itemDescriptionInput.value ||
-    !itemQuantityInput.value ||
-    !itemBuyPriceInput.value ||
-    !itemSellPriceInput.value
-  ) {
-    alert('Please fill out all required fields.');
-    return;
-  }
-   //////////////////////////////////////////////////////////////
+    </div>
+    </section>
     
-   
-  const itemUserName = itemUserNameInput.value;
-  const itemDate = getCurrentDateTime();
-  const itemSerial = itemSerialInput.value;
-  const itemCategory = itemCategoryInput.value;
-  const itemDescription = itemDescriptionInput.value;
-  const itemQuantity = itemQuantityInput.value;
-  const itemBuyPrice = Number(itemBuyPriceInput.value).toFixed(2);
-  const itemSellPrice = Number(itemSellPriceInput.value).toFixed(2);
-  const itemProfit = Number(itemSellPrice - itemBuyPrice).toFixed(2)* itemQuantity;
-//   const itemBuyPrice = Number(itemBuyPriceInput.value).toFixed(2);
-//   const itemSellPrice = Number(itemSellPriceInput.value).toFixed(2);
-//   const itemProfit =  Number(itemSellPrice - itemBuyPrice)* itemQuantity.toFixed(2);
-  
-  const inventoryItem = {
-    itemUserName: itemUserName,
-    itemDate: itemDate,
-    itemSerial: itemSerial,
-    itemCategory: itemCategory,
-    itemDescription: itemDescription,
-    itemQuantity: itemQuantity,
-    itemBuyPrice: itemBuyPrice,
-    itemSellPrice: itemSellPrice,
-    itemProfit: itemProfit
-  };
-  
-  inventoryData.push(inventoryItem);
-  alert(`Pls. Confirm! item decription  "${itemDescription}" quantity of ${itemQuantity}pcs. will be added to the list`)
-  const row = inventoryTableBody.insertRow();
-  const itemUserNameCell = row.insertCell();
-  const itemDateCell = row.insertCell();
-  const itemSerialCell = row.insertCell();
-  const itemCategoryCell = row.insertCell();
-  const itemDescriptionCell = row.insertCell();
-  const itemQuantityCell = row.insertCell();
-  const itemBuyPriceCell = row.insertCell();
-  const itemSellPriceCell = row.insertCell();
-  const itemProfitCell = row.insertCell();
-  ///////////////////////////////////////////////////
-   // Clear input fields
-   itemUserNameInput.value = '';
-  itemDateInput.value = '';
-  itemSerialInput.value = '';
-  itemCategoryInput.value = '';
-  itemDescriptionInput.value = '';
-  itemQuantityInput.value = '';
-  itemBuyPriceInput.value = '';
-  itemSellPriceInput.value = '';
-  //////////////////////////////////////////////////////
-  itemUserNameCell.innerHTML = itemUserName;
-  itemDateCell.innerHTML = itemDate;
-  itemSerialCell.innerHTML = itemSerial;
-  itemCategoryCell.innerHTML = itemCategory;
-  itemDescriptionCell.innerHTML = itemDescription;
-  itemQuantityCell.innerHTML = itemQuantity;
-  itemBuyPriceCell.innerHTML = itemBuyPrice;
-  itemSellPriceCell.innerHTML = itemSellPrice;
-  itemProfitCell.innerHTML = itemProfit;
-}
-      
-addInventoryButton.addEventListener('click', addInventory);
-      //////////////////////////////////////////
+    <script>
+      const usersRegistrationTableBody = document.getElementById('usersRegistrationList').getElementsByTagName('tbody')[0];
+    
+      fetch('http://localhost:3000/users/signup', {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(userRegistrationData) // Make sure to define and populate userRegistrationData object
+      })
+        .then(res => res.json())
+        .then(data => {
+          const table = document.querySelector("#usersRegistrationList");
+          const tbody = table.querySelector("tbody");
+          const row = document.createElement("tr");
+          row.innerHTML = `
+            <td>${data.regBusinessName}</td>  
+            <td>${data.regFirstName}</td>
+            <td>${data.regLastName}</td>
+            <td>${data.regUserName}</td>
+            <td>${data.regEmailAd}</td>
+            <td>${data.regPassword}</td>
+          `;
+          tbody.appendChild(row);
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
     </script>
-
-   <script src="./js/script.js"></script>
-</body>
+    
+  </body>
 </html>
