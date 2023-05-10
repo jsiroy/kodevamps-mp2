@@ -35,7 +35,7 @@
 }
 
 .firstLandingPage{
- background-color: rgba(177,170,171,255);
+ background-color: rgba(87,93,95,255);
 }
 
 .nav-link:active{opacity: 0.5;}
@@ -182,6 +182,10 @@ button[type="submit"] {
   padding: 10px;
   width: 50%;
 }
+button[type="submit"] {
+  color: #ebf1f3;
+}
+
 
 button[type="submit"]:hover {
   background-color: #4d7e92;
