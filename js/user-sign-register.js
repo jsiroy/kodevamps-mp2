@@ -47,7 +47,7 @@ registrationForm.addEventListener('submit', (event) => {
      displayErrors(errors);
      return;
  }
-          alert('Submitting registration form');
+         
  const regFormData = {
      regBusinessName: regBusinessName,
      regFirstName: regFirstName,
@@ -56,6 +56,7 @@ registrationForm.addEventListener('submit', (event) => {
      regEmailAd: regEmailAd,
      regPassword: regPassword   
  };
+ alert('Submitting registration form');
 //  userRegistrationData.push(regFormData);
 //   console.log(userRegistrationData);
  ////////////////fetching to server////////////////////////////
@@ -132,7 +133,7 @@ loginButton.addEventListener('click', (event) => {
            document.getElementById('username').value = '';
            document.getElementById('password').value = '';
         // Open the URL in a new tab
-        window.open('http://127.0.0.1:5500/admin/epos.html', '_blank');
+        window.open('/admin/epos.html', '_blank');
       } else {
         alert('Invalid users credentials')
         console.log('Invalid login credentials');
