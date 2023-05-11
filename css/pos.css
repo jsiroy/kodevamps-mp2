@@ -219,16 +219,15 @@ button[type="submit"]:hover {
 
 .form-color{background-color:#edf0ee;}
 
-input[type="password"]:required,
-input[type="email"]:required,
-input[type="text"]:required,
-input[type="number"]:required{
+
+input[type="text"],
+input[type="number"]{
   border: none;
   border-radius: 3px;
-  box-shadow: inset 0 4px 5px rgba(0,0,0,.1);
-  font-size: 16px;
-  padding: 2px;
-  width: 100%;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,.1);
+  font-size: 20px;
+  padding: 5px;
+  width: 50%;
 }
 
 .fontStyling{font-size: 16px; font-weight: bold;}
