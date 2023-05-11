@@ -4,11 +4,11 @@
 const express = require('express');
 const app = express();
 const PORT = 3000;
-
+const cors = require('cors');
   let inventoryItem = [
   // {
   //   itemUserName: 'jsiroy',
-  //   itemDate: 'May 09, 2023, 2:36 PM',
+  //   itemDate: 'May 09, 2023, 2:36 PM', 
   //   itemSerial: 1234,
   //   itemCategory: 'Beverage',
   //   itemDescription: '1L Redhorse',
@@ -31,11 +31,16 @@ app.use(express.json());
 
 ////////////////////////////////////////
       // middleware logger
+  app.use(cors({
+        origin: 'http://127.0.0.1:5500'
+    }));
+
+
 app.use((req, res, next) => {
   const start = Date.now();
-  res.header('Access-Control-Allow-Origin', 'http://127.0.0.1:5500'); ///http://127.0.0.1:5500/
-  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-  res.header('Access-Control-Allow-Headers', 'Content-Type');  
+  // res.header('Access-Control-Allow-Origin', 'http://127.0.0.1:5500'); ///http://127.0.0.1:5500/
+  // res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+  // res.header('Access-Control-Allow-Headers', 'Content-Type');  
   next();
   const delta = Date.now() - start;
   console.log(`${req.method} ${req.url} ${delta}ms`);
@@ -70,7 +75,7 @@ app.post('/admin/inventory-management', (req, res) => {
   });
 
     /////////////////////////User registration///////////////////////////////////
-    app.post('/users/signup', (req, res) => {
+    app.post('/users/registration-signin', (req, res) => {
       const { regBusinessName,regFirstName, regLastName, regUserName, regEmailAd, regPassword } = req.body;
   
       const newUser = {
@@ -89,7 +94,7 @@ app.post('/admin/inventory-management', (req, res) => {
       
     });
     
-     app.get('/users/signup', (req, res) => {
+     app.get('/users/registration-signin', (req, res) => {
       res.json({userRegistrationData});
     });
     //////////////////////////////////////////////////////////////////////////////

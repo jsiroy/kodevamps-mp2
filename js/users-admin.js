@@ -1,7 +1,7 @@
 const registrationButton = document.getElementById('registrationButton');
 const usersRegistrationTableBody = document.getElementById('usersRegistrationList').getElementsByTagName('tbody')[0];
 
-fetch('http://localhost:3000/users/signup')
+fetch('http://localhost:3000/users/registration-signin')
     .then(res => res.json())
     .then(data => {
         console.log(data);

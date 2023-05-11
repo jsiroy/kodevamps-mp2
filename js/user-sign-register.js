@@ -2,10 +2,11 @@
 /////////////////Registration form///////////////////////////////////////
 const registrationForm = document.getElementById('registration-form');
 const registrationList = document.getElementById('usersRegistrationList');
+const myToast = document.getElementById('myToast');//////toast init 
 let userRegistrationData = [];
+
 registrationForm.addEventListener('submit', (event) => {
  event.preventDefault();
-
  const regBusinessName = registrationForm.elements.regBusinessName.value;
  const regFirstName = registrationForm.elements.regFirstName.value;
  const regLastName = registrationForm.elements.regLastName.value;
@@ -56,67 +57,75 @@ registrationForm.addEventListener('submit', (event) => {
      regEmailAd: regEmailAd,
      regPassword: regPassword   
  };
- alert('Submitting registration form');
+
 //  userRegistrationData.push(regFormData);
 //   console.log(userRegistrationData);
  ////////////////fetching to server////////////////////////////
-  fetch('http://localhost:3000/users/signup', {
+  fetch('http://localhost:3000/users/registration-signin', {
      method: 'POST',
      headers: {
          'Content-Type': 'application/json'
      },
      body: JSON.stringify(regFormData)
- })
+     })
      .then(response => 
-    {
+     {
           if (!response.ok)
         {
          throw new Error('Network response was not ok');
         }
           return response.json();
-    })
-         .then(data => 
-        {
-          console.log(data);
+     })
+      .then(data => 
+     {
+        myToast.classList.add('show');
+       // console.log(data);   
+       // alert('Registration form successfuilly submitted');//////// patch to sign-in form if succesfully register
+       /////////////////////////////////////////////////////
+         const offcanvasButton = document.querySelector('a[data-bs-target="#user-credentials"]');
+         if (offcanvasButton) {
+           offcanvasButton.click();       
+        }
+          ///////////////////////////////////////////////////////
         })
-     .catch(error => 
+  .catch(error => 
         {
-           console.error('There was a problem with the fetch operation:', error);
+         console.error('There was a problem with the fetch operation:', error);
         });     
-
- registrationForm.reset();
- ///////////////////////////////////////////////////////////////
+        
+  registrationForm.reset();
+      ///////////////////////////////////////////////////////////////
  
-  });
+      });
 
    
-displayErrors = errors => {
- for (const fields in errors) {
-     const errorMessage = errors[fields];
-     const errorElement = document.getElementById(fields + 'Error');
-     errorElement.textContent = errorMessage;
- }
+  displayErrors = errors => {
+   for (const fields in errors) {
+       const errorMessage = errors[fields];
+       const errorElement = document.getElementById(fields + 'Error');
+       errorElement.textContent = errorMessage;
+       }
 
-}
-///////////////////end of registration form///////////////////////////////////
-///////////////////User Credential validation/////////////////////////////////
+       }   
+      ///////////////////end of registration form///////////////////////////////////
+      ///////////////////User Credential validation/////////////////////////////////
 
 
-const loginForm = document.getElementById('credentials-validation-form');
-const loginButton = document.getElementById('for-credentials-validation');
+  const loginForm = document.getElementById('credentials-validation-form');
+  const loginButton = document.getElementById('for-credentials-validation');
 
-loginButton.addEventListener('click', (event) => {
+  loginButton.addEventListener('click', (event) => {
   event.preventDefault();
   const username = document.getElementById('username').value;
   const password = document.getElementById('password').value;
 
   if (username.trim() === '' || password.trim() === '') {
     alert('Please enter both username and password')
-    console.log('Please enter both username and password');
+    // console.log('Please enter both username and password');
     return;
   }
 
-  fetch('http://localhost:3000/users/signup')
+  fetch('http://localhost:3000/users/registration-signin')
     .then(res => res.json())
     .then(data => {
       console.log(data);
@@ -127,16 +136,18 @@ loginButton.addEventListener('click', (event) => {
       });
 
       if (isValidUser) {
-        alert('Login successful')
-        console.log('Login successful');
+        alert('valid users credential will redirect you to admin page');;
+             myToast.style.display = "none";
+        // console.log('Login successful');
           // Clear the input fields
            document.getElementById('username').value = '';
            document.getElementById('password').value = '';
         // Open the URL in a new tab
         window.open('/admin/epos.html', '_blank');
+        myToastRedirect.style.display = "none";
       } else {
         alert('Invalid users credentials')
-        console.log('Invalid login credentials');
+        // console.log('Invalid login credentials');
         // Perform actions for invalid login, such as displaying an error message
       }
     })
@@ -144,8 +155,5 @@ loginButton.addEventListener('click', (event) => {
       console.error('Error:', error);
     });
 });
-
-
-
 
 ///////////////////credentials validation end here//////////////////////////////

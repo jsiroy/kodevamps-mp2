@@ -63,7 +63,7 @@
                               <div class="offcanvas offcanvas-start form-color" data-bs-scroll="true" tabindex="-1" id="user-credentials" aria-labelledby="user-credentials">
                                   <div class="offcanvas-header">
                                     <h5 class="offcanvas-title" id="user-credentials">Sign-In</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>      
                                   </div>
                                   <div class="offcanvas-body">
                                     <!----------user credentials forms starts here----------->
@@ -77,10 +77,16 @@
                                         <label for="exampleInputPassword1" class="form-label">Password</label>
                                         <input type="password" class="form-control" id="password">
                                       </div>
-                                      <!-- <div class="mb-3 form-check">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                                      </div> -->
+                                             <!---------------Toast message ends here------------------------>
+                                              <div class="toast align-items-center" id="myToast" role="alert" aria-live="assertive" aria-atomic="true">
+                                               <div class="d-flex">
+                                                 <div class="toast-body">
+                                                   Registration was successful, please login.
+                                                 </div>
+                                                 <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                                               </div>
+                                            </div>
+                                            <!---------Toast message ends here----------------->
                                       <button type="submit" class="btn btn-primary" id="for-credentials-validation">Submit</button>
                                     </form>
                                     <!----------user credentials forms ends here-------------->
@@ -139,13 +145,15 @@
                                   </div> -->
                                   <button type="submit" id="registrationButton" class="btn btn-primary">Submit</button>
                                 </div>
+                                    <!---------Toast message start here---------------->
+                                 
                               </form>
                                <!-------Registration Forms ends here------------>
                              </div>
                            </div>
                            <!-------- registration offcanvas ends here---------> 
                       </div>
-                      
+                     
                </div>
           <img src="./resources/mp2banner.png" alt="POS brochure"class="index-brochure w-100">
     </Section>                  
