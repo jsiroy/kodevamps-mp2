@@ -1,0 +1,60 @@
+{
+    "userRegistrationData":
+     [
+        {
+            {
+            "regBusinessName": "Electonics Store",   ////USER #1
+            "regFirstName": "Joel",
+            "regLastName": "Siroy",
+            "regUserName": "jsiroy",
+            "regEmailAd": "joel.siroy@gmail.com",
+            "regPassword": "12345"
+            }:[
+                            {
+                                  "inventoryItem":          ///// PRODUCT LIST OF USER #1
+                                                [
+                                                {
+                                               "itemUserName": "",
+                                               "itemDate": "May 12, 2023, 7:30 PM",
+                                               "itemSerial": "123",
+                                               "itemCategory": "sff",
+                                               "itemDescription": "sdfsdf",
+                                               "itemQuantity": "1",
+                                               "itemBuyPrice": "2.00",
+                                               "itemSellPrice": "4.00",
+                                               "itemProfit": "2.00"
+                                               }
+                                              ]
+                          }
+                 ]
+          },
+          {
+            {
+            "regBusinessName": "Electonic",   ////USER #2
+            "regFirstName": "Renz",
+            "regLastName": "Siroy",
+            "regUserName": "jsiroy",
+            "regEmailAd": "joel.siroy@gmail.com",
+            "regPassword": "12345"
+            }:[
+                            {
+                                  "inventoryItem":          ///// PRODUCT LIST OF USER #2
+                                               [
+                                               {
+                                              "itemUserName": "",
+                                              "itemDate": "May 12, 2023, 7:30 PM",
+                                              "itemSerial": "123",
+                                              "itemCategory": "sff",
+                                              "itemDescription": "sdfsdf",
+                                              "itemQuantity": "1",
+                                              "itemBuyPrice": "2.00",
+                                              "itemSellPrice": "4.00",
+                                              "itemProfit": "2.00"
+                                              }
+                                             ]
+                          }
+                 ]
+          },
+          
+    ]
+}
